@@ -24,7 +24,10 @@
     font-size: 32px;
   }
 
- 
+ .cont h3{
+   align-self: flex-start;
+   padding: 10px;
+ }
 
   /*home*/
   .emergency-section img {
