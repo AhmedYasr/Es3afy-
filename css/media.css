@@ -324,7 +324,7 @@
   .rating-header i{
     transform: translateX(-450%);
   }
-
+}
 
 /* iphone 5/SE */
 @media (max-height: 568px) {
