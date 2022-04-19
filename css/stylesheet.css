@@ -1005,8 +1005,13 @@ a {
   align-items: center;
 }
 .contact img {
+<<<<<<< HEAD
   width: 60px;
   height: 60px;
+=======
+  width: 100px;
+  height: 100px;
+>>>>>>> parent of 445635d (Update stylesheet.css)
   object-fit: cover;
   border-radius: 50%;
 }
