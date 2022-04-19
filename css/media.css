@@ -205,7 +205,15 @@
     font-size: 32px;
     color: white;
     cursor: pointer;
-  }
+  } 
+  /*sos*/
+    .s-c-upper {
+  
+  text-align: left;
+}
+.s-c-upper i{
+  transform: translateX(0);
+}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -315,13 +323,7 @@
   .rating-header i{
     transform: translateX(-450%);
   }
-  .s-c-upper {
-  
-  text-align: left;
-}
-.s-c-upper i{
-  transform: translateX(0);
-}
+
 }
 
 /* iphone 5/SE */
