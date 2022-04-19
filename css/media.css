@@ -218,6 +218,7 @@
   font-size: 24px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .sos-contact-container .contact{
   justify-content: flex-start;
   padding: 0;
@@ -227,6 +228,8 @@
   align-items: flex-start;
 >>>>>>> parent of c66b30a (Update media.css)
 }
+=======
+>>>>>>> parent of 87e1c9b (Update media.css)
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
