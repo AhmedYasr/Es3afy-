@@ -207,61 +207,14 @@
     cursor: pointer;
   } 
   /*sos*/
-    .s-c-upper {
-  
-  text-align: left;
-}
+
 .s-c-upper i{
   transform: translateX(0);
 }
 .contact i{
   font-size: 24px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.sos-contact-container .contact{
-  justify-content: flex-start;
-  padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  gap: 10%;
-=======
-.contact{
-  align-items: flex-start;
->>>>>>> parent of c66b30a (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-=======
-  gap: 15%;
->>>>>>> parent of c977d0b (Update media.css)
-}
-=======
->>>>>>> parent of 87e1c9b (Update media.css)
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -371,26 +324,7 @@
   .rating-header i{
     transform: translateX(-450%);
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-=======
->>>>>>> parent of edf6b8a (Update media.css)
-}
 
 /* iphone 5/SE */
 @media (max-height: 568px) {
