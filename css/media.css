@@ -217,7 +217,7 @@
 .contact i{
   font-size: 24px;
 }
-.contact{
+.sos-contact-container .contact{
   justify-content: flex-start;
 }
 }
