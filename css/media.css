@@ -58,6 +58,7 @@
     transform: translateX(0);
     left: 1%;
     width: 100vw;
+  
   }
   tr th,
   td {
@@ -101,11 +102,16 @@
   }
   .history-main {
     transform: translateX(0);
-    top: 33%;
+    top: 40%;
     width: 100vw;
     margin-bottom: 0;
     padding: 0;
     padding-top: 30px;
+    height: 48vh;
+  }
+  .history-main .rides-history-section:last-of-type{
+    
+    
   }
   .history-header {
     flex-direction: column;
