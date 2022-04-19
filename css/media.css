@@ -212,6 +212,13 @@
   .request-section2 {
     justify-content: center;
   }
+  .profile-section2{
+      width: max-content;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -253,6 +260,19 @@
   margin-top: 25%;
 
 }
+  .profile-section2{
+      width: max-content;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  }
+  .rating-header{
+    text-align: center;
+  }
+  .rating-header i{
+    transform: translateX(-450%);
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -282,6 +302,19 @@
   margin-top: 15%;
 
 }
+  .profile-section2{
+      width: max-content;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  }
+  .rating-header{
+    text-align: center;
+  }
+  .rating-header i{
+    transform: translateX(-450%);
+  }
 }
 
 /* iphone 5/SE */

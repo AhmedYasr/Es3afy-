@@ -959,6 +959,10 @@ a {
 }
 .s-c-upper {
   margin-bottom: 50px;
+  text-align: center;
+}
+.s-c-upper i{
+  transform: translateX(-330%);
 }
 .sos-contact-container .add-new {
   display: flex;
@@ -994,39 +998,18 @@ a {
   margin-top: 55px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5%;
   padding: 0 20px 0 20px;
   align-items: center;
 }
-@media (max-height: 670px) {
-  .sos-contact-container .contact {
-    margin-top: 23px;
-    padding: 0;
-  }
-}
-@media (max-width: 280px) {
-  .sos-contact-container .contact .all-text {
-    margin-left: 0 !important;
-  }
-}
-.sos-contact-container .contact .all-text {
-  margin-left: -56px;
-  line-height: 1.5;
-}
-.sos-contact-container .contact .all-text p:first-child {
-  color: var(--light);
-  font-weight: bold;
-}
-.sos-contact-container .contact .all-text p:last-child {
-  color: var(--dark);
-  font-weight: 500;
-}
-.sos-contact-container .contact img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.contact img {
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  border-radius: 50%;
 }
+
 /* Start add contact */
 .custom-file-input2::-webkit-file-upload-button {
   visibility: hidden;
@@ -1648,9 +1631,16 @@ body {
   flex-direction: column;
   gap: 15px;
   padding-left: 15px;
-  font-size: 18px;
-}
 
+
+}
+.profile-section2 p{
+  font-size: 14px;
+
+}
+.profile-section2 h5{
+  font-size: 16px;
+}
 .profile-input {
   border: none;
   font-size: 16px;
