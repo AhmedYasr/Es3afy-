@@ -267,19 +267,19 @@
      .first-image-first-use {
   width:450px;
   height: 450px;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 .second-image-first-use {
   width: 450px;
   height: 450px;
-  margin-top: 25%;
+  margin-top: 15%;
 
 }
 .third-image-first-use {
   width: 550px;
   height: 400px;
   object-fit: cover;
-  margin-top: 25%;
+  margin-top: 15%;
 
 }
 }
