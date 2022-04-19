@@ -315,6 +315,13 @@
   .rating-header i{
     transform: translateX(-450%);
   }
+  .s-c-upper {
+  
+  text-align: left;
+}
+.s-c-upper i{
+  transform: translateX(0);
+}
 }
 
 /* iphone 5/SE */
