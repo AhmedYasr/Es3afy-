@@ -264,6 +264,24 @@
   .request-section2 {
     justify-content: center;
   }
+     .first-image-first-use {
+  width:450px;
+  height: 450px;
+  margin-top: 25%;
+}
+.second-image-first-use {
+  width: 450px;
+  height: 450px;
+  margin-top: 25%;
+
+}
+.third-image-first-use {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 25%;
+
+}
 }
 
 /* iphone 5/SE */
