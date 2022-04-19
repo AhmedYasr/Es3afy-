@@ -964,6 +964,7 @@ a {
 .s-c-upper i{
   transform: translateX(-330%);
 }
+
 .sos-contact-container .add-new {
   display: flex;
   gap: 20px;
