@@ -448,7 +448,8 @@ a {
   transform: translateY(25%);
 }
 .section-1 img {
-  max-width: 15%;
+  width: 200px;
+  height: 200px;
   transform: translateY(30%);
 }
 .section-1 i {
