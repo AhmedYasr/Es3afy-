@@ -24,7 +24,7 @@
   border-radius: 5px;
   background-color: #dadada;
 }
-.go-back{
+.go-back {
   font-size: 32px;
 }
 /* End variables */
@@ -83,7 +83,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 30px;
   font-size: 16px;
   text-align: center;
@@ -92,20 +92,15 @@ a:active {
 .first-image-first-use {
   width: 250px;
   height: 250px;
-  margin-top: 25%;
 }
 .second-image-first-use {
   width: 250px;
   height: 250px;
-  margin-top: 25%;
-
 }
 .third-image-first-use {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  margin-top: 25%;
-
 }
 
 .first-use-container a {
@@ -128,7 +123,7 @@ a:active {
 }
 .cont h3 {
   align-self: center;
-  padding: 10px;
+  padding: 5px;
 }
 .cont a:visited {
   outline: none;
@@ -168,7 +163,6 @@ a:active {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  
 }
 
 .content-container {
@@ -176,14 +170,12 @@ a:active {
   height: 100%;
   position: relative;
   color: #222831;
-  
-
 }
 
 .sign-up {
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 5%;
   transform: translateX(-50%);
   height: 100vh;
   display: flex;
@@ -191,13 +183,19 @@ a:active {
   align-items: center;
   
   gap: 15px;
-  
-
 }
-.sign-up label{
+.sign-up p span {
+  color: var(--light);
+  display: block;
+  padding-top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sign-up label {
   align-self: flex-start;
 }
-.sign-up input{
+.sign-up input {
   align-self: flex-start;
 }
 
@@ -207,17 +205,16 @@ a:active {
   margin-bottom: 3vh;
   transition: all 1s ease-in;
   font-size: 28px;
-  
 }
 
 .content-container-2 {
-  top: 21%;
+  top: 11%;
   height: 100vh;
   width: 100%;
   position: absolute;
   border-radius: 60% / 10%;
   background-color: #222831;
-  transform: translateY(70%);
+  transform: translateY(100%);
   transition: transform 1s ease-in;
 }
 
@@ -960,8 +957,6 @@ a {
 .s-c-upper {
   margin-bottom: 50px;
 }
-
-
 .sos-contact-container .add-new {
   display: flex;
   gap: 20px;
@@ -996,18 +991,39 @@ a {
   margin-top: 55px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 5%;
+  justify-content: space-between;
   padding: 0 20px 0 20px;
   align-items: center;
 }
-.contact img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
+@media (max-height: 670px) {
+  .sos-contact-container .contact {
+    margin-top: 23px;
+    padding: 0;
+  }
 }
-
+@media (max-width: 280px) {
+  .sos-contact-container .contact .all-text {
+    margin-left: 0 !important;
+  }
+}
+.sos-contact-container .contact .all-text {
+  margin-left: -56px;
+  line-height: 1.5;
+}
+.sos-contact-container .contact .all-text p:first-child {
+  color: var(--light);
+  font-weight: bold;
+}
+.sos-contact-container .contact .all-text p:last-child {
+  color: var(--dark);
+  font-weight: 500;
+}
+.sos-contact-container .contact img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* Start add contact */
 .custom-file-input2::-webkit-file-upload-button {
   visibility: hidden;
@@ -1461,7 +1477,6 @@ body {
   gap: 10px;
 }
 
-
 .rating-container {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
   display: flex;
@@ -1602,25 +1617,11 @@ body {
   gap: 60px;
 }
 
-.profile-section1 {
-  display: flex;
-  position: relative;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-}
 
-.profile-section1 img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-.profile-section1 i {
+.ed {
   position: absolute;
-  bottom: 0;
-  transform: translateX(-250%);
+  transform: translate(400%,-300%);
   font-size: 24px;
 }
 
@@ -1628,17 +1629,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 15px;
-
-
+  padding-left: 1rem;
+  font-size: 18px;
 }
-.profile-section2 p{
-  font-size: 14px;
 
-}
-.profile-section2 h5{
-  font-size: 16px;
-}
 .profile-input {
   border: none;
   font-size: 16px;
@@ -2169,7 +2163,7 @@ th {
 .profile-overlay h1 {
   color: var(--light);
 }
-.profile-overlay i{
+.profile-overlay i {
   position: absolute;
   left: 95%;
   top: 1%;
@@ -2180,4 +2174,36 @@ th {
 
 .profile-overlay-active {
   display: flex;
+}
+
+.profile-pic-div{
+  width: 200px;
+  height: 200px;
+ 
+  position: relative;
+  
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#file{
+ display: none;
+}
+
+#upload-btn{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,20%);
+  text-align: center;
+   background-color: #8c8c8cb0;
+  color: white;
+  font-size: 16px;
 }

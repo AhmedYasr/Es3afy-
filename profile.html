@@ -23,7 +23,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Es3afy</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo1.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/Untitled-1.png"
+    />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link
@@ -34,7 +39,7 @@
     />
   </head>
 
-  <body style="overflow-y: scroll">
+  <body style="overflow-y: scroll; overflow-x: hidden">
     <div class="profile-overlay">
       <h1>Edit your account</h1>
       <i class="fas fa-times close-profile-overlay"></i>
@@ -54,9 +59,25 @@
     </div>
 
     <div class="profile-container">
-      <div class="profile-section1">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        "
+        class=""
+      >
+        <div class="profile-pic-div">
+          <img
+            id="profile-pic"
+            src="/images/vecteezy_user-icon-flat-design-isolated-on-white-background_.jpg"
+            alt=""
+          />
+          <input type="file" id="file" />
+          <label for="file" id="upload-btn"> choose file </label>
+        </div>
         <i id="edit-icon" class="fas fa-edit ed"></i>
-        <img src="/images/person.jpg" alt="" />
       </div>
 
       <div class="profile-section2">
@@ -126,6 +147,22 @@
       });
       closeIcon.addEventListener("click", function () {
         profileOverlay.classList.toggle("profile-overlay-active");
+      });
+
+      const profilePicDiv = document.querySelector(".profile-pic-div");
+      const uploadBtn = document.querySelector("#upload-btn");
+      const file = document.querySelector("#file");
+      const profilePic = document.querySelector("#profile-pic");
+
+      file.addEventListener("change", function () {
+        const choosedFile = this.files[0];
+        if (choosedFile) {
+          const reader = new FileReader();
+          reader.addEventListener("load", function () {
+            profilePic.setAttribute("src", reader.result);
+          });
+          reader.readAsDataURL(choosedFile);
+        }
       });
     </script>
   </body>
