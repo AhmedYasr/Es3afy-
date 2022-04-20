@@ -963,10 +963,12 @@ a {
 /* End Get in touch */
 /* Start sos contact */
 /* start s-c main */
+
 .s-main-container .s-main-header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+ 
   /* margin-bottom: 50vh; */
 }
 .s-main-container .s-main-content .main-c {
