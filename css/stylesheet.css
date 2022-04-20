@@ -469,6 +469,7 @@ a {
   margin: 15px 15px 0 15px;
 }
 
+
 .n-id-header {
   width: 100vw;
   margin-top: 15px;
@@ -492,16 +493,10 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.n-id-container .ic-text i {
-  font-size: 13rem;
-}
+
 .n-id-container .ic-text p {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 30px;
-}
+       padding-top: 10px;
+ }
 .n-id-container .buttons {
   display: flex;
   flex-direction: column;
@@ -2205,5 +2200,43 @@ th {
   text-align: center;
    background-color: #8c8c8cb0;
   color: white;
+  font-size: 16px;
+}
+
+.profile-pic-div-id{
+  width: 80vw;
+  height: 200px;
+ 
+  position: relative;
+  
+  align-items: center;
+  overflow: hidden;
+}
+#profile-pic-id{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+  
+  
+
+}
+#file-id{
+ display: none;
+}
+
+#upload-btn-id{
+  height: 40px;
+  width: 100%;
+ 
+  
+   background-color: var(--light);
+   width: 150px;
+   height: 41px;
+   border-radius: 5px;
+   text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: block;
   font-size: 16px;
 }
