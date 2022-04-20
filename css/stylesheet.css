@@ -1757,6 +1757,101 @@ body {
   background-color: #eee;
   outline: none;
 }
+.profile-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.profile-overlay h1 {
+  color: var(--light);
+}
+.profile-overlay i {
+  position: absolute;
+  left: 95%;
+  top: 1%;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-overlay-active {
+  display: flex;
+}
+
+.profile-pic-div {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#file {
+  display: none;
+}
+
+#upload-btn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-align: center;
+  background-color: #8c8c8cb0;
+  color: white;
+  font-size: 16px;
+}
+
+.profile-pic-div-id {
+  width: 80vw;
+  height: 200px;
+
+  position: relative;
+
+  align-items: center;
+  overflow: hidden;
+}
+#profile-pic-id {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#file-id {
+  display: none;
+}
+
+#upload-btn-id {
+  height: 40px;
+  width: 100%;
+
+  color: white;
+  background-color: var(--light);
+  width: 150px;
+  height: 41px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+
 
 /*paramedic home*/
 
@@ -2258,97 +2353,3 @@ th {
   font-size: 14px;
 }
 
-.profile-overlay {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--dark);
-  z-index: 1;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-}
-
-.profile-overlay h1 {
-  color: var(--light);
-}
-.profile-overlay i {
-  position: absolute;
-  left: 95%;
-  top: 1%;
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-}
-
-.profile-overlay-active {
-  display: flex;
-}
-
-.profile-pic-div {
-  width: 200px;
-  height: 200px;
-
-  position: relative;
-
-  border-radius: 50%;
-  overflow: hidden;
-}
-#profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-#file {
-  display: none;
-}
-
-#upload-btn {
-  height: 40px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  text-align: center;
-  background-color: #8c8c8cb0;
-  color: white;
-  font-size: 16px;
-}
-
-.profile-pic-div-id {
-  width: 80vw;
-  height: 200px;
-
-  position: relative;
-
-  align-items: center;
-  overflow: hidden;
-}
-#profile-pic-id {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-#file-id {
-  display: none;
-}
-
-#upload-btn-id {
-  height: 40px;
-  width: 100%;
-
-  color: white;
-  background-color: var(--light);
-  width: 150px;
-  height: 41px;
-  border-radius: 5px;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  font-size: 16px;
-}
