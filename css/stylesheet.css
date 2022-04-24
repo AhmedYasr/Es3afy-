@@ -1721,6 +1721,23 @@ body {
   margin-top: 20px;
   padding: 0.5rem;
 }
+.rating-counter::before{
+  content: "0";
+  transition:  all 0.25s ease 0s;
+ color: transparent;
+}
+#rating-1:checked ~.rating-counter::before{
+  content: "1";
+}
+#rating-2:checked ~.rating-counter::before{
+  content: "2";
+}#rating-3:checked ~.rating-counter::before{
+  content: "3";
+}#rating-4:checked ~.rating-counter::before{
+  content: "4";
+}#rating-5:checked ~.rating-counter::before{
+  content: "5";
+}
 
 /*profile*/
 
