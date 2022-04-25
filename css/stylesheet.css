@@ -1722,7 +1722,9 @@ body {
   padding: 0.5rem;
 }
 
-
+.rating-counter{
+   display: none;
+}
 /*profile*/
 
 .profile-container {
