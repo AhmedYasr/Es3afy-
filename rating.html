@@ -46,6 +46,7 @@
       <h1>rate this request</h1>
     </div>
     <div class="rating-container">
+      <input class="rating-counter" value="0" style="border: none;">
       <div class="feedback">
         <div class="rating">
           <input type="radio" name="rating" id="rating-5" class="rating-stars" />
@@ -58,7 +59,6 @@
           <label for="rating-2"></label>
           <input type="radio" name="rating" id="rating-1" class="rating-stars" />
           <label for="rating-1"></label>
-          <div class="rating-counter">0</div>
           <div class="emoji-wrapper">
             <div class="emoji">
               <svg
@@ -375,8 +375,8 @@
       starss.reverse();
       for (let i = 0; i < starss.length; i++) {
         starss[i].addEventListener('click',()=>{
-          counter.innerHTML=`${i + 1}`
-          console.log(counter.innerHTML)
+          counter.value=`${i + 1}`
+          console.log(counter.value)
         })
         
       }
