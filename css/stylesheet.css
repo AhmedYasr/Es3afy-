@@ -2154,6 +2154,7 @@ th {
   left: 50%;
   transform: translateX(-50%);
   top: 15%;
+  margin-left: 20px;
 }
 td {
   padding-top: 15px;
@@ -2164,11 +2165,13 @@ td {
 table {
   border-collapse: collapse;
   width: 100%;
+  
 }
 
 td,
 th {
   text-align: center;
+  padding-left: 20px;
 }
 
 .admin-sidebar {
