@@ -2371,8 +2371,8 @@ th {
 }
 .national-id-overlay div{
   background-color: white;
-  width: 50vw;
-  height: 50vh;
+  width: 400px;
+  height: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
