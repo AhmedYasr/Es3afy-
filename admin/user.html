@@ -100,7 +100,7 @@
   
 
 <div class="national-id-overlay">
-    <div class="" style="display: none;">
+    <div class="national-id-overlay-content" style="display: none;">
         <i class="fas fa-times hide-national-id-overlay">
         </i>
         <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
@@ -135,11 +135,16 @@
   const viewNationalId = document.querySelector('.view-national-id')
   const hideNationaIdOverlay = document.querySelector('.hide-national-id-overlay')
    const nationalIdOverlay = document.querySelector('.national-id-overlay')
+   const nationalIdOverlayContent = document.querySelector('.national-id-overlay-content')
+
   viewNationalId.addEventListener('click',()=>{
       nationalIdOverlay.style.display = "block"
+      nationalIdOverlayContent.style.display = "block"
    })
    hideNationaIdOverlay.addEventListener('click',()=>{
        nationalIdOverlay.style.display = "none"
+      nationalIdOverlayContent.style.display = "block"
+
    })
  </script>
 </html>
