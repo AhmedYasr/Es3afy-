@@ -2,11 +2,9 @@
   /* sign-up-in */
   .sign-up {
     top: 15px;
-    
   }
   .content-container-2 {
     top: 7.5%;
-    
     left: 0;
     width: 100vw;
   }
@@ -24,13 +22,13 @@
     font-size: 32px;
   }
 
-   .sign-up p {
-     font-size: 12px;
-   }
-   
-   .history-body{
-     overflow: hidden;
-   }
+  .sign-up p {
+    font-size: 12px;
+  }
+
+  .history-body {
+    overflow: hidden;
+  }
 
   /*home*/
   .emergency-section img {
@@ -109,7 +107,7 @@
     margin-bottom: 0;
     padding: 0;
     margin-top: 20%;
-    height:43vh;
+    height: 43vh;
   }
   .history-header {
     flex-direction: column;
@@ -217,7 +215,7 @@
   .request-section2 {
     justify-content: center;
   }
-  .history-body{
+  .history-body {
     overflow-y: scroll;
   }
 }
@@ -226,7 +224,7 @@
   .request-section2 {
     justify-content: center;
   }
-  .history-body{
+  .history-body {
     overflow-y: scroll;
   }
 }
@@ -234,7 +232,7 @@
   .request-section2 {
     justify-content: center;
   }
-  .history-body{
+  .history-body {
     overflow-y: scroll;
   }
 }
@@ -284,7 +282,7 @@
   }
   .content-container-2 {
     top: 8.5%;
-    
+
     left: 0;
     width: 100vw;
   }
@@ -298,7 +296,7 @@
   .sign-active {
     transform: translateY(0);
   }
-    .sos-contact,
+  .sos-contact,
   .sos-contact1,
   .sos-contact2,
   .sos-contact3,
