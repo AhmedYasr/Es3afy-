@@ -102,7 +102,7 @@
             <img src="/images/person.jpg" alt="" />
             <div class="rides-adjust">
               <h4>name example</h4>
-              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay" style="color: var(--light);">view more...</span></i>
+              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay" style="color: var(--light);" onclick="view(this)">view more...</span></i>
             </div>
           </div>
           <hr />
@@ -191,7 +191,11 @@
      
      
      
-     for (let i = 0; i < viewFeedbackOverlay.length; i++) {
+     
+      
+
+    
+        for (let i = 0; i < viewFeedbackOverlay.length; i++) {
        viewFeedbackOverlay[i].addEventListener('click',(e)=>{
          const view = e.target
          console.log(view)
