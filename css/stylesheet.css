@@ -2393,7 +2393,7 @@ th {
 }
 
 .national-id-overlay div img{
-  width: 100%;
+  width: 50%;
   height: 200px;
   object-fit: contain;
 }
