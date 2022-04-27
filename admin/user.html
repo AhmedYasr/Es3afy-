@@ -6,35 +6,43 @@
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
-    />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+      />
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
       rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Es3afy</title>
-    <link
+      />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Es3afy</title>
+      <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="../images/Untitled-1.png"
-    />
-    <link rel="stylesheet" href="../css/stylesheet.css" />
-    <link rel="stylesheet" href="../css/media.css" />
-
-    <link
+      />
+      <link rel="stylesheet" href="../css/stylesheet.css" />
+      <link rel="stylesheet" href="../css/media.css" />
+      
+      <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
-    />
-  </head>
-  <body>
+      />
+    </head>
+  <body style="overflow-x: hidden; " class="users-body">
+    <div class="national-id-overlay">
+        <div class="national-id-overlay-content" style="display: none;">
+            <i class="fas fa-times hide-national-id-overlay">
+            </i>
+            <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
+            <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
+        </div>
+    </div>
     <div class="admin-header">
       <!-- <div class="admin-header-section1">
         <input class="search-input" type="text" />
@@ -59,8 +67,8 @@
         </div>
       </div>
     </div>
-    <div style="overflow-x: auto" class="admin-container">
-             <div style="display: flex;justify-content: space-around;margin-bottom: 40px;">
+    <div style="overflow-x: hidden" class="admin-container">
+             <div style="display: flex;justify-content: space-around;margin-bottom: 40px;width: 80vw;">
       
       <a href="adminHome.html">
 
@@ -99,14 +107,6 @@
     </div>
   
 
-<div class="national-id-overlay">
-    <div class="national-id-overlay-content" style="display: none;">
-        <i class="fas fa-times hide-national-id-overlay">
-        </i>
-        <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
-        <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
-    </div>
-</div>
      
 
   </body>
@@ -120,10 +120,10 @@
     // });
 
 
-  const viewNationalId = document.querySelector('.view-national-id')
-  const hideNationaIdOverlay = document.querySelector('.hide-national-id-overlay')
-   const nationalIdOverlay = document.querySelector('.national-id-overlay')
-   const nationalIdOverlayContent = document.querySelector('.national-id-overlay-content')
+  const viewNationalId = document.querySelectorAll('.view-national-id')
+  const hideNationaIdOverlay = document.querySelectorAll('.hide-national-id-overlay')
+   const nationalIdOverlay = document.querySelectorAll('.national-id-overlay')
+   const nationalIdOverlayContent = document.querySelectorAll('.national-id-overlay-content')
 
   viewNationalId.addEventListener('click',()=>{
       nationalIdOverlay.style.display = "block"

@@ -2376,7 +2376,6 @@ th {
   flex-direction: column;
   padding: 1rem;
   color: white;
-  display: none;
    cursor: pointer;
  
 }
@@ -2402,9 +2401,13 @@ th {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #222831;
-  z-index: 1;
+  background-color: #2228316e;
+  z-index: 3;
   display: none;
+  overflow-x: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .national-id-overlay div{
   background-color: white;
