@@ -42,7 +42,7 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   background-color: #eee;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 input:focus::placeholder {
   color: transparent;
@@ -317,7 +317,13 @@ input:focus {
   text-align: left;
 }
 .main input {
-  display: block;
+  height: 41px;
+  width: 200px;
+  font-size: 1rem;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
 }
 
 .main button {
@@ -364,11 +370,18 @@ input:focus {
   flex-direction: column;
   gap: 10px;
 }
+
+.adjust h3{
+  text-transform: capitalize;
+}
+
 .adjust-2 {
   display: flex;
 }
 .adjust-2 i {
-  transform: translate(-110%, 20%);
+  transform: translate(-134%, 30%);
+  font-size: 18px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -425,9 +438,6 @@ a {
 .adjust-2 {
   display: flex;
 }
-.adjust-2 i {
-  transform: translate(-110%, 20%);
-}
 /* End Creat password */
 /*Start of medical history*/
 .mh-container {
@@ -435,22 +445,50 @@ a {
   height: 100vh;
 }
 
-.mh-main {
+.mh-main form{
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
   padding: 1.5rem;
 }
+.mh-main span{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 .section-1 {
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.section-1 span {
-  transform: translateY(25%);
+.section-1 label{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
+
+.section-1 select{
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
+  max-width: 300px;
+}
+.section-1 select option{
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
 .section-1 img {
   width: 100px;
   height: 100px;
   transform: translateY(30%);
+  margin-bottom: 10px;
 }
 .section-1 i {
   padding-left: 10px;
@@ -462,6 +500,8 @@ a {
 }
 .mh-main a {
   margin: 0 auto;
+  display: flex;
+  justify-content: center
 }
 .allerrgies-container {
   display: flex;
@@ -673,6 +713,7 @@ a {
 .front::before {
   content: "Photo Of A Front";
 }
+
 /* End National id */
 /* Start Verification */
 .ver-container {
@@ -2165,13 +2206,13 @@ td {
 table {
   border-collapse: collapse;
   width: 100%;
-  
 }
 
 td,
 th {
   text-align: center;
   padding-left: 20px;
+
 }
 
 .admin-sidebar {
@@ -2376,7 +2417,12 @@ th {
   flex-direction: column;
   padding: 1rem;
   color: white;
+<<<<<<< HEAD
    cursor: pointer;
+=======
+  display: none;
+  cursor: pointer;
+>>>>>>> 3b3d356ed4cc74e0c37a57fc0392c12b03207c95
  
 }
 .feedback-overlay h1{
@@ -2389,14 +2435,7 @@ th {
   transform: translateX(-150%);
   font-size: 32px;
   top: 5px;
-
 }
-
-
-
-
-
-
 .national-id-overlay{
   width: 100vw;
   height: 100vh;
