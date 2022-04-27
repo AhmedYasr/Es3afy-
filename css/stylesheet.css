@@ -2417,12 +2417,9 @@ th {
   flex-direction: column;
   padding: 1rem;
   color: white;
-<<<<<<< HEAD
    cursor: pointer;
-=======
-  display: none;
   cursor: pointer;
->>>>>>> 3b3d356ed4cc74e0c37a57fc0392c12b03207c95
+
  
 }
 .feedback-overlay h1{
