@@ -2376,14 +2376,14 @@ th {
   flex-direction: column;
   padding: 1rem;
   color: white;
-<<<<<<< HEAD
+
    cursor: pointer;
   cursor: pointer;
 display: none;
-=======
+
   display: none;
    cursor: pointer;
->>>>>>> parent of 3b3d356 (Update stylesheet.css)
+
  
 }
 .feedback-overlay h1{
