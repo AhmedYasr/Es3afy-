@@ -2368,7 +2368,9 @@ th {
 
 
 
-
+.users-body{
+  position: relative;
+}
 
 .national-id-overlay{
   width: 100vw;
@@ -2376,7 +2378,7 @@ th {
   position: absolute;
   background-color: #2228316e;
   z-index: 3;
-  display: none;
+  display: flex;
   overflow-x: hidden;
   left: 50%;
   top: 50%;
