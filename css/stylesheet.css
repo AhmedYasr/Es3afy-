@@ -2419,7 +2419,7 @@ th {
   color: white;
    cursor: pointer;
   cursor: pointer;
-
+display: none;
  
 }
 .feedback-overlay h1{
@@ -2479,4 +2479,18 @@ th {
 
 .view-national-id{
   cursor: pointer;
+}
+
+
+
+
+
+
+
+.ac{
+  display: flex;
+}
+
+.h {
+  display: none;
 }

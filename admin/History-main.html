@@ -65,70 +65,12 @@
     <div class="history-container">
       <div class="history-main">
         <div class="rides-history-section">
-          <div
-          style="
-              display: flex;
-              align-items: flex-start;
-              justify-content: center;
-              text-align: center;
-              position: relative;
-              flex-direction: column;
-            "
-            class="rides-section1"
-            >
-            <p>TODAY, 4:50 PM</p>
-            <span
-            >made by
-            <img
-            style="
-                  object-fit: cover;
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 50%;
-                  transform: translateY(25%);
-                "
-                src="/images/person.jpg"
-                /></span>
-              </div>
-              <hr />
-          <div class="rides-section2">
-            <img src="/images/person.jpg" alt="" />
-            <div class="rides-adjust">
-              <h4>name example</h4>
-              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay" style="color: var(--light);" >view more...</span></i>
-              <div class="feedback-overlay" style="display: block;">
-              <h1>feedback</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident excepturi quae rem eveniet obcaecati neque sequi, ullam sunt eos quasi voluptas quibusdam laudantium, possimus numquam impedit, magni aliquam officiis.</p>
-              
-              <i class="fas fa-times hide-feedback-overlay"></i>
-              
-            </div>
-            </div>
-          </div>
-          <hr />
-          <div class="rides-section3">
-            <h5>trip</h5>
-            <i style="display: flex; gap: 10px" class="fas fa-location">
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae voluptas enim accu</span
-                >
-                </i
-                >
-                <i style="display: flex; gap: 10px" class="fas fa-location">
-              <span> address example</span>
-              </i
-            >
-          </div>
-        </div>
-
-        <div class="rides-history-section">
-          <div class="feedback-overlay">
+          <div class="feedback-overlay ">
             <h1>feedback</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident excepturi quae rem eveniet obcaecati neque sequi, ullam sunt eos quasi voluptas quibusdam laudantium, possimus numquam impedit, magni aliquam officiis.</p>
         
            <i class="fas fa-times hide-feedback-overlay"></i>
-           
+
           </div>
           <div
             style="
@@ -160,7 +102,65 @@
             <img src="/images/person.jpg" alt="" />
             <div class="rides-adjust">
               <h4>name example</h4>
-              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay " style="color: var(--light);" ">view moree...</span></i>
+              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay" style="color: var(--light);" onclick="">view more...</span></i>
+            </div>
+          </div>
+          <hr />
+          <div class="rides-section3">
+            <h5>trip</h5>
+            <i style="display: flex; gap: 10px" class="fas fa-location">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae voluptas enim accu</span
+              >
+              </i
+            >
+            <i style="display: flex; gap: 10px" class="fas fa-location">
+              <span> address example</span>
+              </i
+            >
+          </div>
+        </div>
+
+       <div class="rides-history-section">
+          <div class="feedback-overlay ">
+            <h1>feedback</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident excepturi quae rem eveniet obcaecati neque sequi, ullam sunt eos quasi voluptas quibusdam laudantium, possimus numquam impedit, magni aliquam officiis.</p>
+        
+           <i class="fas fa-times hide-feedback-overlay"></i>
+
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              text-align: center;
+              position: relative;
+              flex-direction: column;
+            "
+            class="rides-section1"
+          >
+            <p>TODAY, 4:50 PM</p>
+            <span
+              >made by
+              <img
+                style="
+                  object-fit: cover;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  transform: translateY(25%);
+                "
+                src="/images/person.jpg"
+            /></span>
+          </div>
+          <hr />
+          <div class="rides-section2">
+            <img src="/images/person.jpg" alt="" />
+            <div class="rides-adjust">
+              <h4>name example</h4>
+              <i class="fas fa-star"><span>4.8</span><span class="view-feedback-overlay " style="color: var(--light);" onclick="showHide(this)">view moree...</span></i>
             </div>
           </div>
           <hr />
@@ -191,7 +191,7 @@
     <script>
       const viewFeedbackOverlay = document.querySelectorAll('.view-feedback-overlay')
       const hideFeedbackOverlay = document.querySelectorAll('.hide-feedback-overlay')
-      // const feedbackOverlay = document.querySelector('.feedback-overlay')
+      const feedbackOverlay = document.querySelector('.feedback-overlay')
       const ridesHistorySection = document.querySelectorAll('.rides-history-section')
      
      
@@ -220,14 +220,15 @@
 //       })
 //     }
 
-      
-$(".feedback-overlay").hide();
-$(".view-feedback-overlay").click(()=>{
-  $(this).next(".feedback-overlay").slideToggle('slow');
-  console.log('hi')
-});
 
+           function showHide (e){
+             var viewBtn = 'view-feedback-overlay';
+             var feedbackOverlay = "feedback-overlay"
 
+             if(e.className == viewBtn){
+              console.log()
+             }
+           }
 
    
  
