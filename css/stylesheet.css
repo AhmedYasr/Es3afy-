@@ -447,10 +447,39 @@ a {
 .section-1 span {
   transform: translateY(25%);
 }
+.section-1 {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-1 label{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.section-1 select{
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
+  max-width: 300px;
+}
+.section-1 select option{
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
 .section-1 img {
   width: 100px;
   height: 100px;
   transform: translateY(30%);
+  margin-bottom: 10px;
 }
 .section-1 i {
   padding-left: 10px;
@@ -2399,11 +2428,6 @@ display: none;
 
 }
 
-
-
-
-
-
 .national-id-overlay{
   width: 100vw;
   height: 100vh;
@@ -2451,12 +2475,6 @@ display: none;
 .view-national-id{
   cursor: pointer;
 }
-
-
-
-
-
-
 
 .ac{
   display: flex;
