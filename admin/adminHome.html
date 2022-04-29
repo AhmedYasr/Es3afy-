@@ -38,7 +38,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="overflow-y: scroll;" class="admin-body">
+  <body style="overflow-y: scroll" class="admin-body">
     <div class="admin-header">
       <!-- <div class="admin-header-section1">
         <input class="search-input" type="text" />
@@ -64,208 +64,78 @@
       </div>
     </div>
     <div style="overflow-x: auto" class="admin-container">
-      <div style="display: flex;justify-content: space-around;margin-bottom: 40px;">
-        
-      
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 40px;
+        "
+      >
+        <h1>pa<span class="header-span">ramedic</span>als</h1>
 
-          <h1>pa<span class="header-span">ramedic</span>als</h1>
-       
         <a href="user.html">
           <h1>Users</h1>
         </a>
       </div>
-      <table class="list" id="employeeList">
-        <tr>
-          <th>Photo</th>
-          <th>Full Name</th>
-          <th>Mobile</th>
-          <th>ID</th>
-          <th>Email</th>
-          <th>status</th>
-          <th>Operations</th>
-        </tr>
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
+    </div>
+    <div class="users-container">
+      <div class="user-card">
+        <section>
+          <img src="../images/person.jpg" alt="" />
+        </section>
+        <aside>
+          <header>
+            <h2>cillian Murphy</h2>
+            <div class="deleteee-user">
+              <i class="fas fa-trash"></i>
+            </div>
+          </header>
+          <main>
+            <h5>Full name <span>Ahmed yasser mahmoud ahmed</span></h5>
 
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
+            <h5>id <span>5555</span></h5>
 
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
+            <h5>mobile <span>012222222222</span></h5>
 
+            <h5>email <span>example@gmail.com</span></h5>
 
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
+            <h5>status <span>active</span></h5>
 
-
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
-
-
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
-
-
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td>555</td>
-          <td>email@example@gmail.com</td>
-          <td>active</td>
-          <td>
-            <i
-              onClick="onEdit(this); show()"
-              style="color: green"
-              class="fas fa-user-edit"
-            ></i>
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
-
-
-        
-
-        
-      
-      </table>
+            <h5>national id</h5>
+            <span class="view-national-id-overlay">view</span>
+            <div class="national-id-overlay">
+              <img src="../images/istockphoto-612650934-612x612.jpg" alt="" />
+              <img src="../images/istockphoto-612650934-612x612.jpg" alt="" />
+              <i class="fas fa-times hide-national-id-overlay"></i>
+            </div>
+          </main>
+        </aside>
+      </div>
     </div>
     <div class="overlay">
       <div class="container-1">
         <i class="fas fa-times close-icon"></i>
-        <form
-          onsubmit="event.preventDefault();onFormSubmit();"
-          autocomplete="off"
-        >
-          <input type="text" name="name" id="name" placeholder="name" />
-          <input type="text" name="mobile" id="mobile" placeholder="mobile" />
-          <input type="text" name="id" id="id" placeholder="id" />
-          <input type="text" name="email" id="email" placeholder="email" />
-          <input type="text" name="status" id="status" placeholder="status" />
-          <div class="submit-container">
-            <input
-              type="submit"
-              value="Submit"
-              class="submit-btn"
-              id="submit-btn"
-            />
-          </div>
+        <form action="">
+          <label for="">name</label>
+          <input type="text" class="name input-custom" />
+          <label for="">id</label>
+          <input type="text" class="id input-custom" />
+          <label for="">mobile</label>
+          <input type="text" class="mobile input-custom" />
+          <label for="">email</label>
+          <input type="text" class="email input-custom" />
+          <label for="">status</label>
+          <input type="text" class="status input-custom" />
+          <button class="add-btn button-custom">add</button>
         </form>
       </div>
     </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
   <script>
     // const searchIcon = document.querySelector(".search-icon");
     // const searchInput = document.querySelector(".search-input");
@@ -287,72 +157,9 @@
           "px, initial-scale=1.0"
       );
     }, 300);
-    var selectedRow = null;
-    function onFormSubmit() {
-      var formData = readFormData();
-      if (selectedRow == null) insertNewRecord(formData);
-      else updateRecord(formData);
-      resetForm();
-    }
-    function readFormData() {
-      var formData = {};
-      formData["name"] = document.getElementById("name").value;
-      formData["mobile"] = document.getElementById("mobile").value;
-      formData["id"] = document.getElementById("id").value;
-      formData["email"] = document.getElementById("email").value;
-      formData["status"] = document.getElementById("status").value;
-      return formData;
-    }
-    function insertNewRecord(data) {
-      var table = document.getElementById("employeeList");
-      var newRow = table.insertRow(table.length);
-      let cell1 = newRow.insertCell(0);
-      cell1.innerHTML = data.name;
-      let cell2 = newRow.insertCell(1);
-      cell2.innerHTML = data.mobile;
-      let cell3 = newRow.insertCell(2);
-      cell3.innerHTML = data.id;
-      let cell4 = newRow.insertCell(3);
-      cell4.innerHTML = data.email;
-      let cell5 = newRow.insertCell(4);
-      cell5.innerHTML = data.status;
-      cell5 = newRow.insertCell(5);
-      cell5.innerHTML = `<i onClick="onEdit(this); show()" class="fas fa-edit edit-icon"></i>
-    <i  onClick="onDelete(this)" class="fas fa-trash delete-icon"></i>`;
-    }
-    function resetForm() {
-      document.getElementById("name").value = "";
-      document.getElementById("mobile").value = "";
-      document.getElementById("id").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("status").value = "";
-      selectedRow = null;
-    }
-    function onEdit(td) {
-      selectedRow = td.parentElement.parentElement;
-      document.getElementById("name").value = selectedRow.cells[1].innerHTML;
-      document.getElementById("mobile").value = selectedRow.cells[2].innerHTML;
-      document.getElementById("id").value = selectedRow.cells[3].innerHTML;
-      document.getElementById("email").value = selectedRow.cells[4].innerHTML;
-      document.getElementById("status").value = selectedRow.cells[5].innerHTML;
-    }
-    function updateRecord(formData) {
-      selectedRow.cells[1].innerHTML = formData.name;
-      selectedRow.cells[2].innerHTML = formData.mobile;
-      selectedRow.cells[3].innerHTML = formData.id;
-      selectedRow.cells[4].innerHTML = formData.email;
-      selectedRow.cells[5].innerHTML = formData.status;
-    }
-    function onDelete(td) {
-      if (confirm("Are you sure to delete this record ?")) {
-        row = td.parentElement.parentElement;
-        document.getElementById("employeeList").deleteRow(row.rowIndex);
-        resetForm();
-      }
-    }
+
     const closeIcon = document.querySelector(".close-icon");
     const addIcon = document.querySelector(".add-icon");
-    const submitBtn = document.querySelector(".submit-btn");
     const overlay = document.querySelector(".overlay");
     closeIcon.addEventListener("click", function () {
       overlay.style.display = "none";
@@ -360,11 +167,136 @@
     addIcon.addEventListener("click", function () {
       overlay.style.display = "block";
     });
-    submitBtn.addEventListener("click", function () {
-      overlay.style.display = "none";
-    });
+
     function show() {
       overlay.style.display = "block";
     }
+
+    const name1 = document.querySelector(".name");
+    const id = document.querySelector(".id");
+    const email = document.querySelector(".email");
+    const status1 = document.querySelector(".status");
+    const mobile = document.querySelector(".mobile");
+
+    const usersContainer = document.querySelector(".users-container");
+
+    const addBtn = document.querySelector(".add-btn");
+
+    addBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      let userCard = document.createElement("div");
+      userCard.classList.add("user-card");
+      let section = document.createElement("section");
+      let img = document.createElement("img");
+      img.src = "../images/person.jpg";
+      section.appendChild(img);
+      userCard.appendChild(section);
+
+      let aside = document.createElement("aside");
+      userCard.appendChild(aside);
+      let header = document.createElement("header");
+      let deletee = document.createElement("div");
+      deletee.className = "deleteee-user";
+      let deleteeIcon = document.createElement("i");
+      deletee.appendChild(deleteeIcon);
+      deleteeIcon.className = "fas fa-trash";
+      aside.appendChild(header);
+      let h = document.createElement("h2");
+      let headerName = name1.value.split(" ");
+      for (let i = 0; i < headerName.length; i++) {
+        h.innerText = `${headerName[0]} ${headerName[1]}`;
+      }
+      header.appendChild(h);
+      header.appendChild(deletee);
+
+      let main = document.createElement("main");
+      aside.appendChild(main);
+
+      let h1 = document.createElement("h5");
+      h1.innerText = "full name";
+      let span1 = document.createElement("span");
+      let h2 = document.createElement("h5");
+      h2.innerText = "id";
+      let span2 = document.createElement("span");
+      let h3 = document.createElement("h5");
+      h3.innerText = "mobile";
+      let span3 = document.createElement("span");
+      let h4 = document.createElement("h5");
+      h4.innerText = "email";
+      let span4 = document.createElement("span");
+      let h5 = document.createElement("h5");
+      h5.innerText = "status";
+      let span5 = document.createElement("span");
+
+      let h6 = document.createElement("h5");
+      h6.innerText = "national-id";
+      let span6 = document.createElement("span");
+      span6.classList.add("view-national-id-overlay");
+      span1.innerText = name1.value;
+      span2.innerText = id.value;
+      span3.innerText = mobile.value;
+      span4.innerText = email.value;
+      span5.innerText = status1.value;
+      span6.innerText = "view";
+
+      main.appendChild(h1);
+      h1.appendChild(span1);
+      main.appendChild(h2);
+      h2.appendChild(span2);
+      main.appendChild(h3);
+      h3.appendChild(span3);
+      main.appendChild(h4);
+      h4.appendChild(span4);
+      main.appendChild(h5);
+      h5.appendChild(span5);
+      main.appendChild(h6);
+      main.appendChild(span6);
+      usersContainer.appendChild(userCard);
+
+      let nationaIdOverlay = document.createElement("div");
+      nationaIdOverlay.classList.add("national-id-overlay");
+      let nationaIdOverlayImg1 = document.createElement("img");
+      let nationaIdOverlayImg2 = document.createElement("img");
+      nationaIdOverlayImg1.src = "../images/istockphoto-612650934-612x612.jpg";
+      nationaIdOverlayImg2.src = "../images/istockphoto-612650934-612x612.jpg";
+
+      let hideIcon = document.createElement("i");
+      hideIcon.className = "fas fa-times hide-national-id-overlay";
+
+      nationaIdOverlay.appendChild(nationaIdOverlayImg1);
+      nationaIdOverlay.appendChild(nationaIdOverlayImg2);
+      nationaIdOverlay.appendChild(hideIcon);
+      main.appendChild(nationaIdOverlay);
+
+      const firstAidImg = document.querySelector(".first-aid-img");
+
+      $(".national-id-overlay").hide(); //this hides the list initially
+
+      $(".hide-national-id-overlay").click(function () {
+        $(this).parent().closest("div").slideToggle("fast");
+      });
+
+      $(".view-national-id-overlay").click(function () {
+        $(this).next(".national-id-overlay").slideToggle("fast");
+      });
+
+      $(".deleteee-user").click(function () {
+        $(this).closest(".user-card").hide();
+        console.log("hi");
+      });
+    });
+
+    $(".national-id-overlay").hide(); //this hides the list initially
+
+    $(".hide-national-id-overlay").click(function () {
+      $(this).parent().closest("div").slideToggle("fast");
+    });
+
+    $(".view-national-id-overlay").click(function () {
+      $(this).next(".national-id-overlay").slideToggle("fast");
+    });
+    $(".deleteee-user").click(function () {
+      $(this).closest(".user-card").hide();
+    });
   </script>
 </html>

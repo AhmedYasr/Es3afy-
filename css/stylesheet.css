@@ -2039,21 +2039,24 @@ th {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+  
 }
 
 .container-1 input {
   display: block;
   margin-bottom: 20px;
-  height: 30px;
   border: none;
   outline: none;
   padding-left: 15px;
   background-color: #eee;
   text-transform: capitalize;
-  color: #222831;
   border-radius: 5px;
 }
-
+.container-1 label {
+  color: var(--light);
+   display: block;
+   padding-bottom: 10px;
+}
 .submit-container {
   display: flex;
   justify-content: center;
@@ -2372,52 +2375,132 @@ th {
   position: relative;
 }
 
-.national-id-overlay{
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-color: #2228316e;
-  z-index: 3;
-  display: flex;
-  overflow-x: hidden;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.national-id-overlay div{
-  background-color: white;
-  width: 400px;
-  height: 400px;
+.users-container{
+    width: calc(100vw - 70px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 25%;
+   transform: translateX(70px);
+   padding: 1rem;
+}
+
+.user-card{
+    width: 600px;
+    height: 350px;
+    background-color: rgb(226, 225, 223);
+    display: flex;
+    border: 1px solid rgba(255, 0, 0, 0.199);
+    border-radius: 3%;
+    position: relative;
+    cursor: pointer;
+}
+.first-aid-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  transform: translate(50%,-50%);
+}
+.user-card section:first-of-type {
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-card section:first-of-type img {
+  width: 120px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-card aside{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.user-card aside header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    position:  relative;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
 }
+.user-card aside header i{
+  color: red;
+  font-size: 30px;
+  padding: 1rem;
 
-.national-id-overlay div i {
-  font-size: 32px;
-  color: #222831;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  transform: translateX(-120%);
-  cursor: pointer;
-  
+}
+.user-card aside main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content:flex-start;
+    gap: 20px;
+    
+}
+.user-card aside main h5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.575);
+}
+.user-card aside main  span {
+    font-size: 14px;
+    color: black;
+    align-self: flex-end;
+    
+    
+}
+.view-national-id-overlay{
+  transform: translateY(-220%);
+  color: var(--light) !important;
 }
 
-.national-id-overlay div img{
-  width: 50%;
-  height: 200px;
-  object-fit: contain;
+.national-id-overlay {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    background-color: var(--dark);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    left: 0;
+    top: 0;
 }
-
-.view-national-id{
-  cursor: pointer;
+.national-id-overlay img{
+    width: 50%;
+    height: 45%;
+    object-fit: contain;
+}
+.national-id-overlay i {
+    position: absolute;
+    left: 100%;
+    font-size: 32px;
+    transform: translateX(-150%);
+    top: 3%;
+    color: var(--light);
 }
 
 
@@ -2467,4 +2550,15 @@ th {
 }
 .show{
   color: var(--light);
+}
+
+
+.users {
+  width: 500px;
+  height: 250px;
+  border: 1px solid rgba(0, 128, 0, 0.397);
+}
+.users .national-id-overlay {
+   width: 500px;
+  height: 250px;
 }

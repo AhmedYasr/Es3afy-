@@ -35,14 +35,7 @@
       />
     </head>
   <body style="overflow-x: hidden; " class="users-body">
-    <div class="national-id-overlay">
-        <div class="national-id-overlay-content" style="display: none;">
-            <i class="fas fa-times hide-national-id-overlay">
-            </i>
-            <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
-            <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
-        </div>
-    </div>
+ 
     <div class="admin-header">
       <!-- <div class="admin-header-section1">
         <input class="search-input" type="text" />
@@ -76,39 +69,117 @@
       </a>
         <h1>U<span class="header-span">ser</span>s</h1>
       </div>
-      <table class="list" id="employeeList">
-        <tr>
-          <th>Photo</th>
-          <th>Full Name</th>
-          <th>Mobile</th>
-          <th>National ID</th>
-          <th>Email</th>
-          
-          <th>Operations</th>
-        </tr>
-        <tr>
-          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
-          <td>ahmed yasser</td>
-          <td>01223342432</td>
-          <td style="color: var(--light);" class="view-national-id">view</td>
-          <td>email@example@gmail.com</td>
-          
-          <td>
-         
-            <i
-              onClick="onDelete(this);"
-              style="color: red"
-              class="fas fa-trash"
-            ></i>
-          </td>
-        </tr>
+    
       
-      </table>
-    </div>
-  
+      
 
+
+
+    </div>
+    <div class="users-container">
      
 
+   <div class="user-card users">
+
+        <section>
+          <img src="../images/person.jpg" alt="" />
+        </section>
+        <aside>
+          <header>
+            <h2>cillian Murphy</h2>
+            
+<div class="deleteee-user">
+
+  <i style="color: green;" class="fas fa-trash  "></i>
+</div>
+            
+          </header>
+          <main>
+              <h5>Full name <span>Ahmed yasser mahmoud ahmed</span></h5>
+               
+          
+              <h5>mobile <span>012222222222</span> </h5>
+              <h5>email <span>example@gmail.com</span></h5>
+            
+              <h5>national id </h5>
+              <span class="view-national-id-overlay">view</span>
+              <div class="national-id-overlay">
+                  <img src="../images/istockphoto-612650934-612x612.jpg" alt="">
+                  <img src="../images/istockphoto-612650934-612x612.jpg" alt="">
+                  <i class="fas fa-times hide-national-id-overlay"></i>
+              </div>
+          </main>
+        </aside>
+      </div>
+
+
+
+
+
+
+    <div class="user-card users">
+
+
+        <section>
+          <img src="../images/person.jpg" alt="" />
+        </section>
+        <aside>
+          <header>
+            <h2>cillian Murphy</h2>
+            <div class="deleteee-user">
+
+  <i  class="fas fa-trash  "></i>
+</div>
+          </header>
+          <main>
+              <h5>Full name <span>Ahmed yasser mahmoud ahmed</span></h5>
+               
+          
+              <h5>mobile <span>012222222222</span> </h5>
+              <h5>email <span>example@gmail.com</span></h5>
+            
+              <h5>national id </h5>
+              <span class="view-national-id-overlay">view</span>
+              <div class="national-id-overlay">
+                  <img src="../images/istockphoto-612650934-612x612.jpg" alt="">
+                  <img src="../images/istockphoto-612650934-612x612.jpg" alt="">
+                  <i class="fas fa-times hide-national-id-overlay"></i>
+              </div>
+          </main>
+        </aside>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+     
+   <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </body>
   <script>
     // const searchIcon = document.querySelector(".search-icon");
@@ -120,19 +191,22 @@
     // });
 
 
-  const viewNationalId = document.querySelector('.view-national-id')
-  const hideNationaIdOverlay = document.querySelector('.hide-national-id-overlay')
-   const nationalIdOverlay = document.querySelector('.national-id-overlay')
-   const nationalIdOverlayContent = document.querySelector('.national-id-overlay-content')
+$(".national-id-overlay").hide(); //this hides the list initially
 
-  viewNationalId.addEventListener('click',()=>{
-      nationalIdOverlay.style.display = "block"
-      nationalIdOverlayContent.style.display = "flex"
-   })
-   hideNationaIdOverlay.addEventListener('click',()=>{
-       nationalIdOverlay.style.display = "none"
-      nationalIdOverlayContent.style.display = "flex"
+$(".hide-national-id-overlay").click(function () {
+  $(this).parent().closest("div").slideToggle("fast");
+});
 
-   })
+$(".view-national-id-overlay").click(function () {
+    $(this).next(".national-id-overlay").slideToggle("fast");
+    console.log('hi')
+});
+
+$(".deleteee-user").click(function () {
+    $(this).closest('.user-card').hide();
+    console.log('hi')
+});
+
+
  </script>
 </html>
