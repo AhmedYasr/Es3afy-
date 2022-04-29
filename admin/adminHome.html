@@ -273,11 +273,11 @@
       $(".national-id-overlay").hide(); //this hides the list initially
 
       $(".hide-national-id-overlay").click(function () {
-        $(this).parent().closest("div").slideToggle("fast");
+        $(this).parent().closest("div").slideUp("fast");
       });
 
       $(".view-national-id-overlay").click(function () {
-        $(this).next(".national-id-overlay").slideToggle("fast");
+        $(this).next(".national-id-overlay").slideDown("fast");
       });
 
       $(".deleteee-user").click(function () {
