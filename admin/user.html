@@ -191,21 +191,20 @@
     // });
 
 
-$(".national-id-overlay").hide(); //this hides the list initially
+   $(".national-id-overlay").hide(); //this hides the list initially
 
-$(".hide-national-id-overlay").click(function () {
-  $(this).parent().closest("div").slideToggle("fast");
-});
+      $(".hide-national-id-overlay").click(function () {
+        $(this).parent().closest("div").slideUp("fast");
+      });
 
-$(".view-national-id-overlay").click(function () {
-    $(this).next(".national-id-overlay").slideToggle("fast");
-    console.log('hi')
-});
+      $(".view-national-id-overlay").click(function () {
+        $(this).next(".national-id-overlay").slideDown("fast");
+      });
 
-$(".deleteee-user").click(function () {
-    $(this).closest('.user-card').hide();
-    console.log('hi')
-});
+      $(".deleteee-user").click(function () {
+        $(this).closest(".user-card").hide();
+        console.log("hi");
+      });
 
 
  </script>
