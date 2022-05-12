@@ -1747,7 +1747,7 @@ body {
 }
 
 .rating-input {
-  height: 150px !important;
+  padding: 1rem;
 }
 
 .rating-button {
