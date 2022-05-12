@@ -249,7 +249,7 @@
 }
 
 /* iphone 5/SE */
-@media (max-height: 568px) {
+@media (max-height: 667px) {
   /* arrived */
   .arrived img {
     width: 50px;
@@ -286,13 +286,15 @@
     top: 15px;
   }
   .sign-up-h1 {
-    font-size: 16px;
+    font-size: 15px;
+     margin-bottom: 5px;
   }
   .content-container {
     font-size: 12px;
+   
   }
   .content-container-2 {
-    top: 8.5%;
+    top: 6.5%;
 
     left: 0;
     width: 100vw;
@@ -302,6 +304,9 @@
   }
   .sign-up {
     gap: 8px;
+  }
+  .sign-up p span  {
+    font-size: 12px;
   }
 
   .sign-active {
@@ -316,4 +321,52 @@
     width: 40px;
     height: 40px;
   }
+  .sign-up div{
+    gap: 0px;
+    font-size: 12px;
+  }
+   .sign-up div input {
+     height: 20px;
+   }
+  .bmi{
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  padding-left: 1rem;
+}
+.bmi div{
+  transform: translateX(-20%);
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.bmi img {
+  width: 30px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+.bmi select{
+  height: 20px;
+  width: 40px;
+}
+.bmi input{
+  width: 50px;
+  transform: translateX(10%);
+
+  height: 20px;
+ font-size: 10px;
+  padding: 5px;
+
+}
+.sign-up button{
+  height: 20px;
+  font-size: 12px;
+  width: 100px;
+}
 }

@@ -41,6 +41,15 @@
 
   <body style="overflow-y: scroll; overflow-x: hidden">
     <div class="profile-overlay">
+         <div class="profile-pic-div">
+          <img
+            id="profile-pic"
+            src="/images/vecteezy_user-icon-flat-design-isolated-on-white-background_.jpg"
+            alt=""
+          />
+          <input type="file" id="file" />
+          <label for="file" id="upload-btn"> choose file </label>
+        </div>
       <h1>Edit your account</h1>
       <i class="fas fa-times close-profile-overlay"></i>
       <input class="overlay-input-firstname input-custom" type="text" />
@@ -67,14 +76,12 @@
         "
         class=""
       >
-        <div class="profile-pic-div">
+        <div class="profile-pic-div-outer">
           <img
-            id="profile-pic"
+            id="profile-pic-outer"
             src="/images/vecteezy_user-icon-flat-design-isolated-on-white-background_.jpg"
             alt=""
           />
-          <input type="file" id="file" />
-          <label for="file" id="upload-btn"> choose file </label>
         </div>
         <i id="edit-icon" class="fas fa-edit ed"></i>
       </div>
@@ -129,27 +136,11 @@
       const email = document.querySelector(".email");
       const overlaySubmit = document.querySelector(".overlay-submit");
       const closeIcon = document.querySelector(".close-profile-overlay");
-      edd.addEventListener("click", function () {
-        profileOverlay.classList.toggle("profile-overlay-active");
-        firstNameInput.value = firstName.innerHTML;
-        lastNameInput.value = lastName.innerHTML;
-        mobileInput.value = mobile.innerHTML;
-      });
-      overlaySubmit.addEventListener("click", function () {
-        profileOverlay.classList.toggle("profile-overlay-active");
-        firstName.innerHTML = firstNameInput.value;
-        lastName.innerHTML = lastNameInput.value;
-        mobile.innerHTML = mobileInput.value;
-      });
-      closeIcon.addEventListener("click", function () {
-        profileOverlay.classList.toggle("profile-overlay-active");
-      });
-
       const profilePicDiv = document.querySelector(".profile-pic-div");
       const uploadBtn = document.querySelector("#upload-btn");
       const file = document.querySelector("#file");
       const profilePic = document.querySelector("#profile-pic");
-
+      const profilePicOuter = document.querySelector("#profile-pic-outer");
       file.addEventListener("change", function () {
         const choosedFile = this.files[0];
         if (choosedFile) {
@@ -160,6 +151,26 @@
           reader.readAsDataURL(choosedFile);
         }
       });
+      edd.addEventListener("click", function () {
+        profileOverlay.classList.toggle("profile-overlay-active");
+        firstNameInput.value = firstName.innerHTML;
+        lastNameInput.value = lastName.innerHTML;
+        mobileInput.value = mobile.innerHTML;
+        
+      });
+      overlaySubmit.addEventListener("click", function () {
+        profileOverlay.classList.toggle("profile-overlay-active");
+        firstName.innerHTML = firstNameInput.value;
+        lastName.innerHTML = lastNameInput.value;
+        mobile.innerHTML = mobileInput.value;
+        profilePicOuter.setAttribute("src",profilePic.src)
+      });
+      closeIcon.addEventListener("click", function () {
+        profileOverlay.classList.toggle("profile-overlay-active");
+      });
+
+
+     
     </script>
   </body>
 </html>
