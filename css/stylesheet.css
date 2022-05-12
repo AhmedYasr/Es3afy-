@@ -212,8 +212,8 @@ a:active {
   position: absolute;
   border-radius: 60% / 10%;
   background-color: #222831;
-  transform: translateY(100%);
-  transition: transform 1s ease-in;
+  transform: translateY(200%);
+  transition: transform 1s ease;
 }
 
 .content-container-3 {
