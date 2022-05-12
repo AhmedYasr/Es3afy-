@@ -140,6 +140,9 @@
   .sign-up div{
     gap: 7px;
   }
+  .sign-up  h1 {
+    margin-bottom: 5px;
+  }
   .bmi{
   display: flex;
   width: max-content;
