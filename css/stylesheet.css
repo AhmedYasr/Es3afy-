@@ -2556,11 +2556,6 @@ th {
 }
 
 
-
-
-
-
-
 .ac{
   display: flex;
 }
@@ -2611,6 +2606,6 @@ th {
   border: 1px solid rgba(0, 128, 0, 0.397);
 }
 .users .national-id-overlay {
-   width: 500px;
+  width: 500px;
   height: 250px;
 } 
