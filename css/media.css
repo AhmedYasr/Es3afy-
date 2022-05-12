@@ -245,6 +245,9 @@
   .request-section2 {
     justify-content: center;
   }
+   .content-container-2{
+    top: 5.5%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -271,6 +274,9 @@
   .history-body {
     overflow-y: scroll;
   }
+  .content-container-2{
+    top: 5.5%;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -280,6 +286,7 @@
   .history-body {
     overflow-y: scroll;
   }
+  
 }
 @media screen and (min-width: 1201px) {
   .request-section2 {
@@ -326,7 +333,7 @@
   }
   
   .sign-up-h1 {
-    font-size: 15px;
+    font-size: 24px;
      margin-bottom: 5px;
   }
   .content-container {
