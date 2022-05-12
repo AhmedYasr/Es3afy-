@@ -171,7 +171,7 @@
 }
 .bmi input{
   width: 40px;
- 
+  transform: translateX(-3%);
 
   height: 30px;
  font-size: 10px;
