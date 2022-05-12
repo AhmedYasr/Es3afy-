@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* sign-up-in */
   .sign-up {
-    top: 15px;
+    
   }
   .content-container-2 {
     top: 7.5%;
@@ -155,7 +155,7 @@
   flex-direction: column;
 }
 .bmi img {
-  width: 60px;
+  width: 40px;
   object-fit: contain;
   aspect-ratio: 1/1;
 }
@@ -165,7 +165,7 @@
 }
 .bmi input{
   width: 50px;
-  transform: translateX(10%);
+  transform: translateX(5%);
 
   height: 30px;
  font-size: 10px;
@@ -318,9 +318,7 @@
     width: 130px;
     height: 130px;
   }
-  .sign-up {
-    top: 15px;
-  }
+  
   .sign-up-h1 {
     font-size: 15px;
      margin-bottom: 5px;
