@@ -140,6 +140,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      $('input[type="search"]').on("keypress", function(event){
+    event.preventDefault();
+    return false;
+});
         setTimeout(function () {
       let viewheight = $(window).height();
       let viewwidth = $(window).width();
