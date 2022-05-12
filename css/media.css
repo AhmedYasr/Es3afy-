@@ -170,12 +170,12 @@
   width: 40px;
 }
 .bmi input{
-  width: 50px;
+  width: 40px;
   transform: translateX(5%);
 
   height: 30px;
  font-size: 10px;
-  padding: 5px;
+  padding: 1px;
 
 }
 
@@ -385,7 +385,7 @@
   padding-left: 1rem;
 }
 .bmi div{
-  transform: translateX(-20%);
+  /* transform: translateX(-20%); */
   height: max-content;
   display: flex;
   align-items: center;
