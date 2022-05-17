@@ -172,14 +172,10 @@ a:active {
 }
 
 .sign-up {
-  
- 
-
   height: 100%;
   display: flex;
   flex-direction: column;
- align-items: center;
-
+  align-items: center;
   gap: 15px;
 }
 .sign-up p span {
