@@ -59,7 +59,9 @@
           <a style="color: var(--light)" href="History-main.html">
             <i class="fas fa-history"></i>
           </a>
-          <i class="fas fa-user-plus add-icon"></i>
+           <a style="color: var(--light)" href="contactUsAdmin.html">
+            <i class="fas fa-comment-alt-dots"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -112,7 +114,7 @@
         </aside>
       </div>
     </div>
-    <div class="overlay">
+    <!-- <div class="overlay">
       <div class="container-1">
         <i class="fas fa-times close-icon"></i>
         <form action="">
@@ -129,7 +131,7 @@
           <button class="add-btn button-custom">add</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -144,147 +146,147 @@
     //   searchContainer.classList.toggle("show");
     //   searchInput.focus();
     // });
-    setTimeout(function () {
-      let viewheight = $(window).height();
-      let viewwidth = $(window).width();
-      let viewport = document.querySelector("meta[name=viewport]");
-      viewport.setAttribute(
-        "content",
-        "height=" +
-          viewheight +
-          "px, width=" +
-          viewwidth +
-          "px, initial-scale=1.0"
-      );
-    }, 300);
+  //   setTimeout(function () {
+  //     let viewheight = $(window).height();
+  //     let viewwidth = $(window).width();
+  //     let viewport = document.querySelector("meta[name=viewport]");
+  //     viewport.setAttribute(
+  //       "content",
+  //       "height=" +
+  //         viewheight +
+  //         "px, width=" +
+  //         viewwidth +
+  //         "px, initial-scale=1.0"
+  //     );
+  //   }, 300);
 
-    const closeIcon = document.querySelector(".close-icon");
-    const addIcon = document.querySelector(".add-icon");
-    const overlay = document.querySelector(".overlay");
-    closeIcon.addEventListener("click", function () {
-      overlay.style.display = "none";
-    });
-    addIcon.addEventListener("click", function () {
-      overlay.style.display = "block";
-    });
+  //   const closeIcon = document.querySelector(".close-icon");
+  //   const addIcon = document.querySelector(".add-icon");
+  //   const overlay = document.querySelector(".overlay");
+  //   closeIcon.addEventListener("click", function () {
+  //     overlay.style.display = "none";
+  //   });
+  //   addIcon.addEventListener("click", function () {
+  //     overlay.style.display = "block";
+  //   });
 
-    function show() {
-      overlay.style.display = "block";
-    }
+  //   function show() {
+  //     overlay.style.display = "block";
+  //   }
 
-    const name1 = document.querySelector(".name");
-    const id = document.querySelector(".id");
-    const email = document.querySelector(".email");
-    const status1 = document.querySelector(".status");
-    const mobile = document.querySelector(".mobile");
+  //   const name1 = document.querySelector(".name");
+  //   const id = document.querySelector(".id");
+  //   const email = document.querySelector(".email");
+  //   const status1 = document.querySelector(".status");
+  //   const mobile = document.querySelector(".mobile");
 
-    const usersContainer = document.querySelector(".users-container");
+  //   const usersContainer = document.querySelector(".users-container");
 
-    const addBtn = document.querySelector(".add-btn");
+  //   const addBtn = document.querySelector(".add-btn");
 
-    addBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      let userCard = document.createElement("div");
-      userCard.classList.add("user-card");
-      let section = document.createElement("section");
-      let img = document.createElement("img");
-      img.src = "../images/person.jpg";
-      section.appendChild(img);
-      userCard.appendChild(section);
+  //   addBtn.addEventListener("click", (event) => {
+  //     event.preventDefault();
+  //     let userCard = document.createElement("div");
+  //     userCard.classList.add("user-card");
+  //     let section = document.createElement("section");
+  //     let img = document.createElement("img");
+  //     img.src = "../images/person.jpg";
+  //     section.appendChild(img);
+  //     userCard.appendChild(section);
 
-      let aside = document.createElement("aside");
-      userCard.appendChild(aside);
-      let header = document.createElement("header");
-      let deletee = document.createElement("div");
-      deletee.className = "deleteee-user";
-      let deleteeIcon = document.createElement("i");
-      deletee.appendChild(deleteeIcon);
-      deleteeIcon.className = "fas fa-trash";
-      aside.appendChild(header);
-      let h = document.createElement("h2");
-      let headerName = name1.value.split(" ");
-      for (let i = 0; i < headerName.length; i++) {
-        h.innerText = `${headerName[0]} ${headerName[1]}`;
-      }
-      header.appendChild(h);
-      header.appendChild(deletee);
+  //     let aside = document.createElement("aside");
+  //     userCard.appendChild(aside);
+  //     let header = document.createElement("header");
+  //     let deletee = document.createElement("div");
+  //     deletee.className = "deleteee-user";
+  //     let deleteeIcon = document.createElement("i");
+  //     deletee.appendChild(deleteeIcon);
+  //     deleteeIcon.className = "fas fa-trash";
+  //     aside.appendChild(header);
+  //     let h = document.createElement("h2");
+  //     let headerName = name1.value.split(" ");
+  //     for (let i = 0; i < headerName.length; i++) {
+  //       h.innerText = `${headerName[0]} ${headerName[1]}`;
+  //     }
+  //     header.appendChild(h);
+  //     header.appendChild(deletee);
 
-      let main = document.createElement("main");
-      aside.appendChild(main);
+  //     let main = document.createElement("main");
+  //     aside.appendChild(main);
 
-      let h1 = document.createElement("h5");
-      h1.innerText = "full name";
-      let span1 = document.createElement("span");
-      let h2 = document.createElement("h5");
-      h2.innerText = "id";
-      let span2 = document.createElement("span");
-      let h3 = document.createElement("h5");
-      h3.innerText = "mobile";
-      let span3 = document.createElement("span");
-      let h4 = document.createElement("h5");
-      h4.innerText = "email";
-      let span4 = document.createElement("span");
-      let h5 = document.createElement("h5");
-      h5.innerText = "status";
-      let span5 = document.createElement("span");
+  //     let h1 = document.createElement("h5");
+  //     h1.innerText = "full name";
+  //     let span1 = document.createElement("span");
+  //     let h2 = document.createElement("h5");
+  //     h2.innerText = "id";
+  //     let span2 = document.createElement("span");
+  //     let h3 = document.createElement("h5");
+  //     h3.innerText = "mobile";
+  //     let span3 = document.createElement("span");
+  //     let h4 = document.createElement("h5");
+  //     h4.innerText = "email";
+  //     let span4 = document.createElement("span");
+  //     let h5 = document.createElement("h5");
+  //     h5.innerText = "status";
+  //     let span5 = document.createElement("span");
 
-      let h6 = document.createElement("h5");
-      h6.innerText = "national-id";
-      let span6 = document.createElement("span");
-      span6.classList.add("view-national-id-overlay");
-      span1.innerText = name1.value;
-      span2.innerText = id.value;
-      span3.innerText = mobile.value;
-      span4.innerText = email.value;
-      span5.innerText = status1.value;
-      span6.innerText = "view";
+  //     let h6 = document.createElement("h5");
+  //     h6.innerText = "national-id";
+  //     let span6 = document.createElement("span");
+  //     span6.classList.add("view-national-id-overlay");
+  //     span1.innerText = name1.value;
+  //     span2.innerText = id.value;
+  //     span3.innerText = mobile.value;
+  //     span4.innerText = email.value;
+  //     span5.innerText = status1.value;
+  //     span6.innerText = "view";
 
-      main.appendChild(h1);
-      h1.appendChild(span1);
-      main.appendChild(h2);
-      h2.appendChild(span2);
-      main.appendChild(h3);
-      h3.appendChild(span3);
-      main.appendChild(h4);
-      h4.appendChild(span4);
-      main.appendChild(h5);
-      h5.appendChild(span5);
-      main.appendChild(h6);
-      main.appendChild(span6);
-      usersContainer.appendChild(userCard);
+  //     main.appendChild(h1);
+  //     h1.appendChild(span1);
+  //     main.appendChild(h2);
+  //     h2.appendChild(span2);
+  //     main.appendChild(h3);
+  //     h3.appendChild(span3);
+  //     main.appendChild(h4);
+  //     h4.appendChild(span4);
+  //     main.appendChild(h5);
+  //     h5.appendChild(span5);
+  //     main.appendChild(h6);
+  //     main.appendChild(span6);
+  //     usersContainer.appendChild(userCard);
 
-      let nationaIdOverlay = document.createElement("div");
-      nationaIdOverlay.classList.add("national-id-overlay");
-      let nationaIdOverlayImg1 = document.createElement("img");
-      let nationaIdOverlayImg2 = document.createElement("img");
-      nationaIdOverlayImg1.src = "../images/istockphoto-612650934-612x612.jpg";
-      nationaIdOverlayImg2.src = "../images/istockphoto-612650934-612x612.jpg";
+  //     let nationaIdOverlay = document.createElement("div");
+  //     nationaIdOverlay.classList.add("national-id-overlay");
+  //     let nationaIdOverlayImg1 = document.createElement("img");
+  //     let nationaIdOverlayImg2 = document.createElement("img");
+  //     nationaIdOverlayImg1.src = "../images/istockphoto-612650934-612x612.jpg";
+  //     nationaIdOverlayImg2.src = "../images/istockphoto-612650934-612x612.jpg";
 
-      let hideIcon = document.createElement("i");
-      hideIcon.className = "fas fa-times hide-national-id-overlay";
+  //     let hideIcon = document.createElement("i");
+  //     hideIcon.className = "fas fa-times hide-national-id-overlay";
 
-      nationaIdOverlay.appendChild(nationaIdOverlayImg1);
-      nationaIdOverlay.appendChild(nationaIdOverlayImg2);
-      nationaIdOverlay.appendChild(hideIcon);
-      main.appendChild(nationaIdOverlay);
+  //     nationaIdOverlay.appendChild(nationaIdOverlayImg1);
+  //     nationaIdOverlay.appendChild(nationaIdOverlayImg2);
+  //     nationaIdOverlay.appendChild(hideIcon);
+  //     main.appendChild(nationaIdOverlay);
 
-      const firstAidImg = document.querySelector(".first-aid-img");
+  //     const firstAidImg = document.querySelector(".first-aid-img");
 
-      $(".national-id-overlay").hide(); //this hides the list initially
+  //     $(".national-id-overlay").hide(); //this hides the list initially
 
-      $(".hide-national-id-overlay").click(function () {
-        $(this).parent().closest("div").slideUp("fast");
-      });
+  //     $(".hide-national-id-overlay").click(function () {
+  //       $(this).parent().closest("div").slideUp("fast");
+  //     });
 
-      $(".view-national-id-overlay").click(function () {
-        $(this).next(".national-id-overlay").slideDown("fast");
-      });
+  //     $(".view-national-id-overlay").click(function () {
+  //       $(this).next(".national-id-overlay").slideDown("fast");
+  //     });
 
-      $(".deleteee-user").click(function () {
-        $(this).closest(".user-card").hide();
-        console.log("hi");
-      });
-    });
+  //     $(".deleteee-user").click(function () {
+  //       $(this).closest(".user-card").hide();
+  //       console.log("hi");
+  //     });
+  //   });
 
    $(".national-id-overlay").hide(); //this hides the list initially
 

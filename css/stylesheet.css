@@ -2598,8 +2598,3 @@ th {
   width: 500px;
   height: 250px;
 } 
-.c{
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--dark);
-}
