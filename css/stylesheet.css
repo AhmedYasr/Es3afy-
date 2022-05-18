@@ -1299,7 +1299,15 @@ a {
   position: absolute;
   top: 90%;
 }
-
+.sos-contact-div{
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 90%;
+  opacity: 0;
+  transition: 500ms ease-in;
+  
+}
 .sos-contact,
 .sos-contact1,
 .sos-contact2,
@@ -1310,33 +1318,30 @@ a {
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
-  position: absolute;
   top: 90%;
   z-index: 1;
-  opacity: 0;
+  
   transition: 500ms ease-in;
 }
 
-.active {
-  transform: translateY(-300%);
+.activeSos {
   opacity: 1;
+  transform: translateY(-100px);
 }
+.sos-contact5{
+  transform: translate(-40px,70px);
+}
+.sos-contact{
+  transform: translate(40px,70px);
 
-.active2 {
-  transform: translate(-150%, -260%);
-  opacity: 1;
 }
-.active3 {
-  transform: translate(-200%, -100%);
-  opacity: 1;
+.sos-contact2{
+  transform: translate(0,20px);
+
 }
-.active4 {
-  transform: translate(150%, -260%);
-  opacity: 1;
-}
-.active5 {
-  transform: translate(200%, -100%);
-  opacity: 1;
+.sos-contact4{
+  transform: translate(0,20px);
+
 }
 
 /* burger menu*/
@@ -2598,3 +2603,4 @@ th {
   width: 500px;
   height: 250px;
 } 
+

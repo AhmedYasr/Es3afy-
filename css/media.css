@@ -248,11 +248,18 @@
    .content-container-2{
     top: 5.5%;
   }
+ .activeSos {
+  opacity: 1;
+  transform: translateY(-200px);
+}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /*arrived*/
-
+  .activeSos {
+  opacity: 1;
+  transform: translateY(-200px);
+}
   .arrived img {
     width: 80px;
     height: 80px;
@@ -286,7 +293,10 @@
   .history-body {
     overflow-y: scroll;
   }
-  
+   .activeSos {
+  opacity: 1;
+  transform: translateY(-200px);
+}
 }
 @media screen and (min-width: 1201px) {
   .request-section2 {
@@ -295,6 +305,10 @@
   .history-body {
     overflow-y: scroll;
   }
+    .activeSos {
+  opacity: 1;
+  transform: translateY(-200px);
+}
 }
 
 /* iphone 5/SE */
