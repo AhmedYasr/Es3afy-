@@ -1285,6 +1285,7 @@ a {
   padding-top: 20px;
   color: red;
 }
+
 .sos-section {
   width: 100vw;
   height: 30%;
@@ -1320,7 +1321,6 @@ a {
   border-radius: 50%;
   top: 90%;
   z-index: 1;
-  
   transition: 500ms ease-in;
 }
 
@@ -1333,15 +1333,12 @@ a {
 }
 .sos-contact{
   transform: translate(40px,70px);
-
 }
 .sos-contact2{
   transform: translate(0,20px);
-
 }
 .sos-contact4{
   transform: translate(0,20px);
-
 }
 
 /* burger menu*/
