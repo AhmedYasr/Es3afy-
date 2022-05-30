@@ -32,6 +32,10 @@
     </a>
         <div id="map"></div>
       <div class="tracking-footer">
+
+        <form action="">
+          <input type="text">
+        </form>
  <div class="first-section">
    <img src="/images/person.jpg" alt="">
           <h3>kendall roy</h3>
@@ -76,6 +80,20 @@ function initMap() {
     zoom: 8,
   });
 }
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    console.log('error')
+  }
+}
+
+function showPosition(position) {
+  console.log( "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude)
+}
+getLocation()
   </script>
 
 

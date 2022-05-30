@@ -54,7 +54,36 @@
         <a href="home.html">
           <button class="button2">cancel request</button>
         </a>
+
+          <form action="" hidden>
+            <input id="long">
+            <input id="lat">
+          </form>
+          
+          
+         
+
       </div>
     </div>
+    <script>
+      const lat = document.getElementById("lat")
+      const long = document.getElementById("long")
+      function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    console.log('error')
+  }
+}
+
+function showPosition(position) {
+  console.log( "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude)
+  lat.value = position.coords.latitude;
+  long.value = position.coords.longitude;
+}
+getLocation();
+
+    </script>
   </body>
 </html>
